@@ -4,7 +4,7 @@ import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 
 const INGREDIENT_PRICES = {
-    salad: 0.50,
+    lettuce: 0.50,
     cheese: 0.40,
     meat: 1.30,
     bacon: 0.60
@@ -14,12 +14,12 @@ class BurgerBuilder extends Component {
 
     state = {
         ingredients: {
-            salad: 0,
+            lettuce: 0,
             bacon: 0,
             cheese: 0,
             meat: 0
         },
-        totalPrice: 4
+        totalPrice: 0
     }
 
     addIngredientHandler = type => {
